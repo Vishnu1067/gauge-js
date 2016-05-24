@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Debugging | Gauge JS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./configuration.html" />
+    
+    
+    <link rel="prev" href="./refactoring.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5"
+        data-chapter-title="Debugging"
+        data-filepath="debugging.md"
+        data-basepath="."
+        data-revision="Tue May 24 2016 17:39:16 GMT+0530 (IST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="install.html">
+            
+                
+                    <a href="./install.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Install
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="usage.html">
+            
+                
+                    <a href="./usage.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Usage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="syntax/index.html">
+            
+                
+                    <a href="./syntax/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Syntax
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="syntax/step-implementation.html">
+            
+                
+                    <a href="./syntax/step-implementation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Step implentation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="syntax/execution-hooks.html">
+            
+                
+                    <a href="./syntax/execution-hooks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Execution hooks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="syntax/custom-messages.html">
+            
+                
+                    <a href="./syntax/custom-messages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Custom messages
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="syntax/data-stores.html">
+            
+                
+                    <a href="./syntax/data-stores.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Data stores
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="syntax/custom-screenshot-hook.html">
+            
+                
+                    <a href="./syntax/custom-screenshot-hook.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Custom screenshot hook
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="refactoring.html">
+            
+                
+                    <a href="./refactoring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Refactoring
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5" data-path="debugging.html">
+            
+                
+                    <a href="./debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Debugging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="configuration.html">
+            
+                
+                    <a href="./configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Gauge JS</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="debugging">Debugging</h1>
+<p><code>gauge-js</code> supports debugging your test implementation code using <a href="https://github.com/node-inspector/node-inspector" target="_blank">node-inspector</a>.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Ensure you have the latest Chrome browser and <code>node-inspector</code> installed. Please consult the <a href="https://github.com/node-inspector/node-inspector" target="_blank">node-inspector documentation</a> for installation instructions.</li>
+<li>Ensure that the binaries <code>node-debug</code> and <code>node-inspector</code> are available on <code>PATH</code>.</li>
+</ul>
+<h2 id="starting-gaugejs-with-debugger">Starting gauge-js with debugger</h2>
+<p>You can do either of these:</p>
+<ul>
+<li>Set the <code>DEBUG</code> key to <code>true</code> in <code>env/&lt;env-name&gt;/js.properties</code> file in your <code>gauge</code> project.</li>
+<li>Set the environment variable <code>DEBUG=true</code> when calling <code>gauge</code>. Like: <code>DEBUG=true gauge specs/</code>. This needs <code>gauge v0.3.2</code> or newer.</li>
+</ul>
+<h2 id="how-it-works">How it works</h2>
+<p>Setting the debug option will launch the runner code through <code>node-debug</code>. It will start <code>node-inspector</code>, launch Chrome DevTools and pause on the first line of execution. You will need to continue execution to let <code>gauge</code> carry on with its execution.</p>
+<p>You can set <code>debugger;</code> inside step implementation or hook callbacks to pause execution in the debugger. This retains the <code>gauge</code> context and gives you a full blown debugger to debug your test implementations.</p>
+<p>Example:</p>
+<pre><code class="lang-js">gauge.step(<span class="hljs-string">&quot;There are &lt;num&gt; vowels.&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">num</span>) </span>{
+  <span class="hljs-keyword">debugger</span>;
+  assert.equal(num, <span class="hljs-number">5</span>);
+});
+</code></pre>
+<p>This will pause the debugger when this step&apos;s callback is executed by <code>gauge-js</code>.</p>
+<h2 id="caveats">Caveats</h2>
+<ul>
+<li>The debugger exposes entire gauge-js runner code.</li>
+<li>You need to be quick enough to hit continue in the browser when <code>node-inspector</code> launches. If this takes too long, <code>gauge</code> will timeout connecting to the API. A workaround for this is to increase the <code>runner_connection_timeout</code> property to an acceptable value.</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./refactoring.html" class="navigation navigation-prev " aria-label="Previous page: Refactoring"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./configuration.html" class="navigation navigation-next " aria-label="Next page: Configuration"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
